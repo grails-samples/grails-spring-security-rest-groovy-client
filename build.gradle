@@ -1,0 +1,32 @@
+apply plugin: 'groovy'
+apply plugin: "codenarc"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.8'
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+    compile 'org.grails:java-client-grails-spring-security-rest:0.3'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+}
+
+test {
+    systemProperties System.properties
+}
+
+codenarc {
+    toolVersion = '0.25.2'
+}
+
+codenarcMain {
+    ignoreFailures false
+    configFile file("${rootProject.projectDir}/config/codenarc/codenarc.groovy")
+}
+
+codenarcTest {
+    ignoreFailures false
+    configFile file("${rootProject.projectDir}/config/codenarc/codenarcTest.groovy")
+}
