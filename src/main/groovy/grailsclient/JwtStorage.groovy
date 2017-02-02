@@ -1,4 +1,4 @@
-package net.transitionmanager.api.client
+package grailsclient
 
 import groovy.transform.CompileStatic
 import org.grails.springsecurityrest.client.Jwt

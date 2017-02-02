@@ -1,8 +1,8 @@
-package net.transitionmanager.api.client
+package grailsclient
 
 import groovy.transform.CompileStatic
-import net.transitionmanager.api.client.model.Project
-import net.transitionmanager.api.client.model.TDSApiError
+import grailsclient.model.Project
+import grailsclient.model.TDSApiError
 
 @CompileStatic
 interface FetchProjectsListener {

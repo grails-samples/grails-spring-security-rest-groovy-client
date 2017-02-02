@@ -1,11 +1,11 @@
-package net.transitionmanager.api.client
+package grailsclient
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import groovy.transform.CompileStatic
 import groovy.transform.TypeCheckingMode
-import net.transitionmanager.api.client.model.Project
-import net.transitionmanager.api.client.model.TDSApiError
+import grailsclient.model.Project
+import grailsclient.model.TDSApiError
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response

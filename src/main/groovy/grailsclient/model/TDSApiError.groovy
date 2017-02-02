@@ -1,4 +1,4 @@
-package net.transitionmanager.api.client.model
+package grailsclient.model
 
 import groovy.transform.CompileStatic
 

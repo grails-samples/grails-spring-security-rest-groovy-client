@@ -1,4 +1,4 @@
-package net.transitionmanager.api.client
+package grailsclient
 
 import groovy.json.JsonBuilder
 import groovy.json.JsonOutput

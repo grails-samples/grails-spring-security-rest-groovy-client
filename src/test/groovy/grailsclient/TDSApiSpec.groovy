@@ -1,7 +1,7 @@
-package net.transitionmanager.api.client
+package grailsclient
 
-import net.transitionmanager.api.client.model.Project
-import net.transitionmanager.api.client.model.TDSApiError
+import grailsclient.model.Project
+import grailsclient.model.TDSApiError
 import spock.lang.IgnoreIf
 import spock.lang.Specification
 import spock.util.concurrent.AsyncConditions
